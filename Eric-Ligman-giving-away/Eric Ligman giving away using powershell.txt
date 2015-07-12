@@ -1,15 +1,9 @@
 #You must run this script as administrator
 
-
-
-
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 # File with downloads link location
 $file = "c:\MSFTEbooks\MSFTEbooks2.txt"
-#Get-Content $file
-
-$DB = import-csv $file
 
 #File data to array
 $shareArray = gc $file
