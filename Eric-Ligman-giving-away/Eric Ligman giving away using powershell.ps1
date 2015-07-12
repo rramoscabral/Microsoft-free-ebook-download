@@ -34,7 +34,7 @@ foreach ($Data in $shareArray)
   #$filename = [System.IO.Path]::GetFileName($source)
 
   # Source with tiny url
-  #$response = Invoke-WebRequest -Uri $source
+  $response = Invoke-WebRequest -Uri $source
   $filename = [System.IO.Path]::GetFileName($response.BaseResponse.ResponseUri.OriginalString)
   
 
